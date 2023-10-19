@@ -51,12 +51,9 @@ var KTUsersList = function () {
         // Init datatable --- more info on datatables: https://datatables.net/manual/
         datatable = $(table).DataTable({
             "info": false,
-            'order': [],
-            "pageLength": 10,
-            "lengthChange": false,
             'columnDefs': [
-                { orderable: false, targets: 0 }, // Disable ordering on column 0 (checkbox)
-                { orderable: false, targets: 6 }, // Disable ordering on column 6 (actions)                
+                { orderable: false, targets: 1 }, // Disable ordering on column 0 (checkbox)
+                { orderable: false, targets: 4 }, // Disable ordering on column 6 (actions)                
             ]
         });
 

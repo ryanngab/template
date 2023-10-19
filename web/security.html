@@ -12,7 +12,7 @@ License: For each use you must have a valid license purchased only from above li
 -->
 <html lang="en">
 	<!--begin::Head-->
-	<head><base href="../../">
+	<head><base href="../">
 		<title>Metronic - the world's #1 selling Bootstrap Admin Theme Ecosystem for HTML, Vue, React, Angular &amp; Laravel by Keenthemes</title>
 		<meta name="description" content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 94,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue &amp; Laravel versions. Grab your copy now and get life-time updates for free." />
 		<meta name="keywords" content="Metronic, bootstrap, bootstrap 5, Angular, VueJs, React, Laravel, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
@@ -28,9 +28,6 @@ License: For each use you must have a valid license purchased only from above li
 		<!--begin::Fonts-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 		<!--end::Fonts-->
-		<!--begin::Page Vendor Stylesheets(used by this page)-->
-		<link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-		<!--end::Page Vendor Stylesheets-->
 		<!--begin::Global Stylesheets Bundle(used by all pages)-->
 		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
@@ -42,7 +39,7 @@ License: For each use you must have a valid license purchased only from above li
 		<!--begin::Main-->
 		<!--begin::Root-->
 		<div class="d-flex flex-column flex-root">
-			<!--begin::Page-->p
+			<!--begin::Page-->
 			<div class="page d-flex flex-row flex-column-fluid">
 				<!--begin::Aside-->
 				<div id="kt_aside" class="aside" data-kt-drawer="true" data-kt-drawer-name="aside" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_mobile_toggle">
@@ -1392,7 +1389,7 @@ License: For each use you must have a valid license purchased only from above li
 										</div>
 									</div>
 								</div>
-								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+								<div data-kt-menu-trigger="click" class="menu-item here show menu-accordion">
 									<span class="menu-link">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: icons/duotune/communication/com006.svg-->
@@ -1425,7 +1422,7 @@ License: For each use you must have a valid license purchased only from above li
 											</a>
 										</div>
 										<div class="menu-item">
-											<a class="menu-link" href="../../demo8/dist/account/security.html">
+											<a class="menu-link active" href="../../demo8/dist/account/security.html">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -2161,7 +2158,7 @@ License: For each use you must have a valid license purchased only from above li
 										</div>
 									</div>
 								</div>
-								<div data-kt-menu-trigger="click" class="menu-item here show menu-accordion mb-1">
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-1">
 									<span class="menu-link">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: icons/duotune/general/gen051.svg-->
@@ -2232,7 +2229,7 @@ License: For each use you must have a valid license purchased only from above li
 											</div>
 										</div>
 										<div class="menu-item">
-											<a class="menu-link active" href="../../demo8/dist/apps/user-management/permissions.html">
+											<a class="menu-link" href="../../demo8/dist/apps/user-management/permissions.html">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -2522,7 +2519,7 @@ License: For each use you must have a valid license purchased only from above li
 								<!--begin::Page title-->
 								<div class="page-title d-flex flex-column me-5">
 									<!--begin::Title-->
-									<h1 class="d-flex flex-column text-dark fw-bolder fs-3 mb-0">Permissions List</h1>
+									<h1 class="d-flex flex-column text-dark fw-bolder fs-3 mb-0">Security</h1>
 									<!--end::Title-->
 									<!--begin::Breadcrumb-->
 									<ul class="breadcrumb breadcrumb-separatorless fw-bold fs-7 pt-1">
@@ -2537,7 +2534,7 @@ License: For each use you must have a valid license purchased only from above li
 										</li>
 										<!--end::Item-->
 										<!--begin::Item-->
-										<li class="breadcrumb-item text-muted">User Management</li>
+										<li class="breadcrumb-item text-muted">Account</li>
 										<!--end::Item-->
 										<!--begin::Item-->
 										<li class="breadcrumb-item">
@@ -2545,7 +2542,7 @@ License: For each use you must have a valid license purchased only from above li
 										</li>
 										<!--end::Item-->
 										<!--begin::Item-->
-										<li class="breadcrumb-item text-dark">Permissions</li>
+										<li class="breadcrumb-item text-dark">Security</li>
 										<!--end::Item-->
 									</ul>
 									<!--end::Breadcrumb-->
@@ -3278,629 +3275,528 @@ License: For each use you must have a valid license purchased only from above li
 						<div class="post d-flex flex-column-fluid" id="kt_post">
 							<!--begin::Container-->
 							<div id="kt_content_container" class="container-xxl">
-								<!--begin::Card-->
-								<div class="card card-flush">
-									<!--begin::Card header-->
-									<div class="card-header mt-6">
-										<!--begin::Card title-->
-										<div class="card-title">
-											<!--begin::Search-->
-											<div class="d-flex align-items-center position-relative my-1 me-5">
-												<!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
-												<span class="svg-icon svg-icon-1 position-absolute ms-6">
-													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-														<rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1" transform="rotate(45 17.0365 15.1223)" fill="black" />
-														<path d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z" fill="black" />
-													</svg>
-												</span>
-												<!--end::Svg Icon-->
-												<input type="text" data-kt-permissions-table-filter="search" class="form-control form-control-solid w-250px ps-15" placeholder="Search Permissions" />
+								
+								<div class="row g-xxl-9">
+									<!--begin::Col-->
+									<div class="col-xxl-8">
+										<!--begin::Security summary-->
+										<div class="card card-xxl-stretch mb-5 mb-xl-10">
+											<!--begin::Header-->
+											<div class="card-header card-header-stretch">
+												<!--begin::Title-->
+												<div class="card-title">
+													<h3 class="m-0 text-gray-900">Security Summary</h3>
+												</div>
+												<!--end::Title-->
+												<!--begin::Toolbar-->
+												<div class="card-toolbar">
+													<ul class="nav nav-tabs nav-line-tabs nav-stretch border-transparent fs-5 fw-bolder" id="kt_security_summary_tabs">
+														<li class="nav-item">
+															<a class="nav-link text-active-primary active" data-kt-countup-tabs="true" data-bs-toggle="tab" href="#kt_security_summary_tab_pane_hours">12 Hours</a>
+														</li>
+														<li class="nav-item">
+															<a class="nav-link text-active-primary" data-kt-countup-tabs="true" data-bs-toggle="tab" id="kt_security_summary_tab_day" href="#kt_security_summary_tab_pane_day">Day</a>
+														</li>
+														<li class="nav-item">
+															<a class="nav-link text-active-primary" data-kt-countup-tabs="true" data-bs-toggle="tab" id="kt_security_summary_tab_week" href="#kt_security_summary_tab_pane_week">Week</a>
+														</li>
+													</ul>
+												</div>
+												<!--end::Toolbar-->
 											</div>
-											<!--end::Search-->
+											<!--end::Header-->
+											
 										</div>
-										<!--end::Card title-->
-										<!--begin::Card toolbar-->
+										<!--end::Security summary-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-xxl-4">
+										<!--begin::Security recent alerts-->
+										<div class="card card-xxl-stretch-50 mb-5 mb-xl-10">
+											<!--begin::Body-->
+											<div class="card-body pt-5">
+												<!--begin::Carousel-->
+												<div id="kt_security_recent_alerts" class="carousel carousel-custom carousel-stretch slide" data-bs-ride="carousel" data-bs-interval="8000">
+													<!--begin::Heading-->
+													<div class="d-flex flex-stack align-items-center flex-wrap">
+														<h4 class="text-gray-400 fw-bold mb-0 pe-2">Recent Alerts</h4>
+														<!--begin::Carousel Indicators-->
+														<ol class="p-0 m-0 carousel-indicators carousel-indicators-dots">
+															<li data-bs-target="#kt_security_recent_alerts" data-bs-slide-to="0" class="ms-1 active"></li>
+															<li data-bs-target="#kt_security_recent_alerts" data-bs-slide-to="1" class="ms-1"></li>
+															<li data-bs-target="#kt_security_recent_alerts" data-bs-slide-to="2" class="ms-1"></li>
+														</ol>
+														<!--end::Carousel Indicators-->
+													</div>
+													<!--end::Heading-->
+													<!--begin::Carousel inner-->
+													<div class="carousel-inner pt-6">
+														<!--begin::Item-->
+														<div class="carousel-item active">
+															<!--begin::Wrapper-->
+															<div class="carousel-wrapper">
+																<!--begin::Description-->
+																<div class="d-flex flex-column flex-grow-1">
+																	<a href="#" class="fs-5 fw-bolder text-dark text-hover-primary">Latest Announcements</a>
+																	<p class="text-gray-600 fs-6 fw-bold pt-3 mb-0">In the last year, you’ve probably had to adapt to new ways of living and working.</p>
+																</div>
+																<!--end::Description-->
+																<!--begin::Summary-->
+																<div class="d-flex flex-stack pt-8">
+																	<span class="badge badge-light-primary fs-7 fw-bolder me-2">Jun 10, 2021</span>
+																	<a href="#" class="btn btn-sm btn-light">Learn More</a>
+																</div>
+																<!--end::Summary-->
+															</div>
+															<!--end::Wrapper-->
+														</div>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<div class="carousel-item">
+															<!--begin::Wrapper-->
+															<div class="carousel-wrapper">
+																<!--begin::Description-->
+																<div class="d-flex flex-column flex-grow-1">
+																	<a href="#" class="fw-bolder text-dark text-hover-primary">Login Attempt Failed</a>
+																	<p class="text-gray-600 fs-6 fw-bold pt-3 mb-0">As we approach one year of working remotely, we wanted to take a look back and share some ways teams around the world have collaborated effectively.</p>
+																</div>
+																<!--end::Description-->
+																<!--begin::Summary-->
+																<div class="d-flex flex-stack pt-8">
+																	<span class="badge badge-light-primary fs-7 fw-bolder me-2">Oct 05, 2021</span>
+																	<a href="#" class="btn btn-light btn-sm btn-color-muted fs-7 fw-bolder px-5">Join</a>
+																</div>
+																<!--end::Summary-->
+															</div>
+															<!--end::Wrapper-->
+														</div>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<div class="carousel-item">
+															<!--begin::Wrapper-->
+															<div class="carousel-wrapper">
+																<!--begin::Description-->
+																<div class="d-flex flex-column flex-grow-1">
+																	<a href="#" class="fw-bolder text-dark text-hover-primary">Top Picks For You</a>
+																	<p class="text-gray-600 fs-6 fw-bold pt-3 mb-0">Today we are excited to share an amazing certification opportunity which is designed to teach you everything</p>
+																</div>
+																<!--end::Description-->
+																<!--begin::Summary-->
+																<div class="d-flex flex-stack pt-8">
+																	<span class="badge badge-light-primary fs-7 fw-bolder me-2">Sep 11, 2021</span>
+																	<a href="#" class="btn btn-light btn-sm btn-color-muted fs-7 fw-bolder px-5">Collaborate</a>
+																</div>
+																<!--end::Summary-->
+															</div>
+															<!--end::Wrapper-->
+														</div>
+														<!--end::Item-->
+													</div>
+													<!--end::Carousel inner-->
+												</div>
+												<!--end::Carousel-->
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Security recent alerts-->
+										<!--begin::Security guidelines-->
+										<div class="card card-xxl-stretch-50 mb-5 mb-xl-10">
+											<!--begin::Body-->
+											<div class="card-body pt-5">
+												<!--begin::Carousel-->
+												<div id="kt_security_guidelines" class="carousel carousel-custom carousel-stretch slide" data-bs-ride="carousel" data-bs-interval="8000">
+													<!--begin::Heading-->
+													<div class="d-flex flex-stack align-items-center flex-wrap">
+														<h4 class="text-gray-400 fw-bold mb-0 pe-2">Security Guidelines</h4>
+														<!--begin::Carousel Indicators-->
+														<ol class="p-0 m-0 carousel-indicators carousel-indicators-dots">
+															<li data-bs-target="#kt_security_guidelines" data-bs-slide-to="0" class="ms-1 active"></li>
+															<li data-bs-target="#kt_security_guidelines" data-bs-slide-to="1" class="ms-1"></li>
+															<li data-bs-target="#kt_security_guidelines" data-bs-slide-to="2" class="ms-1"></li>
+														</ol>
+														<!--end::Carousel Indicators-->
+													</div>
+													<!--end::Heading-->
+													<!--begin::Carousel inner-->
+													<div class="carousel-inner pt-6">
+														<!--begin::Item-->
+														<div class="carousel-item active">
+															<!--begin::Wrapper-->
+															<div class="carousel-wrapper">
+																<!--begin::Description-->
+																<div class="d-flex flex-column flex-grow-1">
+																	<a href="#" class="fs-5 fw-bolder text-dark text-hover-primary">Get Start Your Security</a>
+																	<p class="text-gray-600 fs-6 fw-bold pt-3 mb-0">In the last year, you’ve probably had to adapt to new ways of living and working.</p>
+																</div>
+																<!--end::Description-->
+																<!--begin::Summary-->
+																<div class="d-flex flex-stack pt-8">
+																	<span class="text-muted fw-bold fs-6 pe-2">34, Soho Avenue, Tokio</span>
+																	<a href="#" class="btn btn-sm btn-light">Register</a>
+																</div>
+																<!--end::Summary-->
+															</div>
+															<!--end::Wrapper-->
+														</div>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<div class="carousel-item">
+															<!--begin::Wrapper-->
+															<div class="carousel-wrapper">
+																<!--begin::Description-->
+																<div class="d-flex flex-column flex-grow-1">
+																	<a href="#" class="fw-bolder text-dark text-hover-primary">Security Policy Update</a>
+																	<p class="text-gray-600 fs-6 fw-bold pt-3 mb-0">As we approach one year of working remotely, we wanted to take a look back and share some ways teams around the world have collaborated effectively.</p>
+																</div>
+																<!--end::Description-->
+																<!--begin::Summary-->
+																<div class="d-flex flex-stack pt-8">
+																	<span class="badge badge-light-primary fs-7 fw-bolder me-2">Oct 05, 2021</span>
+																	<a href="#" class="btn btn-light btn-sm btn-color-muted fs-7 fw-bolder px-5">Explore</a>
+																</div>
+																<!--end::Summary-->
+															</div>
+															<!--end::Wrapper-->
+														</div>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<div class="carousel-item">
+															<!--begin::Wrapper-->
+															<div class="carousel-wrapper">
+																<!--begin::Description-->
+																<div class="d-flex flex-column flex-grow-1">
+																	<a href="#" class="fw-bolder text-dark text-hover-primary">Terms Of Use Document</a>
+																	<p class="text-gray-600 fs-6 fw-bold pt-3 mb-0">Today we are excited to share an amazing certification opportunity which is designed to teach you everything</p>
+																</div>
+																<!--end::Description-->
+																<!--begin::Summary-->
+																<div class="d-flex flex-stack pt-8">
+																	<span class="badge badge-light-primary fs-7 fw-bolder me-2">Nov 10, 2021</span>
+																	<a href="#" class="btn btn-light btn-sm btn-color-muted fs-7 fw-bolder px-5">Discover</a>
+																</div>
+																<!--end::Summary-->
+															</div>
+															<!--end::Wrapper-->
+														</div>
+														<!--end::Item-->
+													</div>
+													<!--end::Carousel inner-->
+												</div>
+												<!--end::Carousel-->
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Security guidelines-->
+									</div>
+									<!--end::Col-->
+								</div>
+								<!--end::Row-->
+								<!--begin::Login sessions-->
+								<div class="card mb-5 mb-xl-10">
+									<!--begin::Card header-->
+									<div class="card-header">
+										<!--begin::Heading-->
+										<div class="card-title">
+											<h3>Login Sessions</h3>
+										</div>
+										<!--end::Heading-->
+										<!--begin::Toolbar-->
 										<div class="card-toolbar">
-											<!--begin::Button-->
-											<button type="button" class="btn btn-light-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_add_permission">
-											<!--begin::Svg Icon | path: icons/duotune/general/gen035.svg-->
-											<span class="svg-icon svg-icon-3">
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-													<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-													<rect x="10.8891" y="17.8033" width="12" height="2" rx="1" transform="rotate(-90 10.8891 17.8033)" fill="black" />
-													<rect x="6.01041" y="10.9247" width="12" height="2" rx="1" fill="black" />
-												</svg>
-											</span>
-											<!--end::Svg Icon-->Add Permission</button>
-											<!--end::Button-->
+											<div class="my-1 me-4">
+												<!--begin::Select-->
+												<select class="form-select form-select-sm form-select-solid w-125px" data-control="select2" data-placeholder="Select Hours" data-hide-search="true">
+													<option value="1" selected="selected">1 Hours</option>
+													<option value="2">6 Hours</option>
+													<option value="3">12 Hours</option>
+													<option value="4">24 Hours</option>
+												</select>
+												<!--end::Select-->
+											</div>
+											<a href="#" class="btn btn-sm btn-primary my-1">View All</a>
 										</div>
-										<!--end::Card toolbar-->
+										<!--end::Toolbar-->
 									</div>
 									<!--end::Card header-->
 									<!--begin::Card body-->
-									<div class="card-body pt-0">
-										<!--begin::Table-->
-										<table class="table align-middle table-row-dashed fs-6 gy-5 mb-0" id="kt_permissions_table">
-											<!--begin::Table head-->
-											<thead>
-												<!--begin::Table row-->
-												<tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
-													<th class="min-w-125px">Name</th>
-													<th class="min-w-250px">Assigned to</th>
-													<th class="min-w-125px">Created Date</th>
-													<th class="text-end min-w-100px">Actions</th>
-												</tr>
-												<!--end::Table row-->
-											</thead>
-											<!--end::Table head-->
-											<!--begin::Table body-->
-											<tbody class="fw-bold text-gray-600">
-												<tr>
-													<!--begin::Name=-->
-													<td>User Management</td>
-													<!--end::Name=-->
-													<!--begin::Assigned to=-->
-													<td>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-primary fs-7 m-1">Administrator</a>
-													</td>
-													<!--end::Assigned to=-->
-													<!--begin::Created Date-->
-													<td>22 Sep 2021, 8:43 pm</td>
-													<!--end::Created Date-->
-													<!--begin::Action=-->
-													<td class="text-end">
-														<!--begin::Update-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_update_permission">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="black" />
-																	<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Update-->
-														<!--begin::Delete-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px" data-kt-permissions-table-filter="delete_row">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black" />
-																	<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black" />
-																	<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Delete-->
-													</td>
-													<!--end::Action=-->
-												</tr>
-												<tr>
-													<!--begin::Name=-->
-													<td>Content Management</td>
-													<!--end::Name=-->
-													<!--begin::Assigned to=-->
-													<td>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-primary fs-7 m-1">Administrator</a>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-danger fs-7 m-1">Developer</a>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-success fs-7 m-1">Analyst</a>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-info fs-7 m-1">Support</a>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-warning fs-7 m-1">Trial</a>
-													</td>
-													<!--end::Assigned to=-->
-													<!--begin::Created Date-->
-													<td>22 Sep 2021, 6:05 pm</td>
-													<!--end::Created Date-->
-													<!--begin::Action=-->
-													<td class="text-end">
-														<!--begin::Update-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_update_permission">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="black" />
-																	<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Update-->
-														<!--begin::Delete-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px" data-kt-permissions-table-filter="delete_row">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black" />
-																	<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black" />
-																	<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Delete-->
-													</td>
-													<!--end::Action=-->
-												</tr>
-												<tr>
-													<!--begin::Name=-->
-													<td>Financial Management</td>
-													<!--end::Name=-->
-													<!--begin::Assigned to=-->
-													<td>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-primary fs-7 m-1">Administrator</a>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-success fs-7 m-1">Analyst</a>
-													</td>
-													<!--end::Assigned to=-->
-													<!--begin::Created Date-->
-													<td>25 Oct 2021, 5:20 pm</td>
-													<!--end::Created Date-->
-													<!--begin::Action=-->
-													<td class="text-end">
-														<!--begin::Update-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_update_permission">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="black" />
-																	<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Update-->
-														<!--begin::Delete-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px" data-kt-permissions-table-filter="delete_row">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black" />
-																	<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black" />
-																	<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Delete-->
-													</td>
-													<!--end::Action=-->
-												</tr>
-												<tr>
-													<!--begin::Name=-->
-													<td>Reporting</td>
-													<!--end::Name=-->
-													<!--begin::Assigned to=-->
-													<td>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-primary fs-7 m-1">Administrator</a>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-success fs-7 m-1">Analyst</a>
-													</td>
-													<!--end::Assigned to=-->
-													<!--begin::Created Date-->
-													<td>05 May 2021, 5:20 pm</td>
-													<!--end::Created Date-->
-													<!--begin::Action=-->
-													<td class="text-end">
-														<!--begin::Update-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_update_permission">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="black" />
-																	<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Update-->
-														<!--begin::Delete-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px" data-kt-permissions-table-filter="delete_row">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black" />
-																	<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black" />
-																	<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Delete-->
-													</td>
-													<!--end::Action=-->
-												</tr>
-												<tr>
-													<!--begin::Name=-->
-													<td>Payroll</td>
-													<!--end::Name=-->
-													<!--begin::Assigned to=-->
-													<td>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-primary fs-7 m-1">Administrator</a>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-success fs-7 m-1">Analyst</a>
-													</td>
-													<!--end::Assigned to=-->
-													<!--begin::Created Date-->
-													<td>24 Jun 2021, 10:30 am</td>
-													<!--end::Created Date-->
-													<!--begin::Action=-->
-													<td class="text-end">
-														<!--begin::Update-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_update_permission">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="black" />
-																	<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Update-->
-														<!--begin::Delete-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px" data-kt-permissions-table-filter="delete_row">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black" />
-																	<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black" />
-																	<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Delete-->
-													</td>
-													<!--end::Action=-->
-												</tr>
-												<tr>
-													<!--begin::Name=-->
-													<td>Disputes Management</td>
-													<!--end::Name=-->
-													<!--begin::Assigned to=-->
-													<td>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-primary fs-7 m-1">Administrator</a>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-danger fs-7 m-1">Developer</a>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-info fs-7 m-1">Support</a>
-													</td>
-													<!--end::Assigned to=-->
-													<!--begin::Created Date-->
-													<td>24 Jun 2021, 11:05 am</td>
-													<!--end::Created Date-->
-													<!--begin::Action=-->
-													<td class="text-end">
-														<!--begin::Update-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_update_permission">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="black" />
-																	<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Update-->
-														<!--begin::Delete-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px" data-kt-permissions-table-filter="delete_row">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black" />
-																	<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black" />
-																	<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Delete-->
-													</td>
-													<!--end::Action=-->
-												</tr>
-												<tr>
-													<!--begin::Name=-->
-													<td>API Controls</td>
-													<!--end::Name=-->
-													<!--begin::Assigned to=-->
-													<td>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-primary fs-7 m-1">Administrator</a>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-danger fs-7 m-1">Developer</a>
-													</td>
-													<!--end::Assigned to=-->
-													<!--begin::Created Date-->
-													<td>25 Oct 2021, 6:43 am</td>
-													<!--end::Created Date-->
-													<!--begin::Action=-->
-													<td class="text-end">
-														<!--begin::Update-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_update_permission">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="black" />
-																	<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Update-->
-														<!--begin::Delete-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px" data-kt-permissions-table-filter="delete_row">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black" />
-																	<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black" />
-																	<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Delete-->
-													</td>
-													<!--end::Action=-->
-												</tr>
-												<tr>
-													<!--begin::Name=-->
-													<td>Database Management</td>
-													<!--end::Name=-->
-													<!--begin::Assigned to=-->
-													<td>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-primary fs-7 m-1">Administrator</a>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-danger fs-7 m-1">Developer</a>
-													</td>
-													<!--end::Assigned to=-->
-													<!--begin::Created Date-->
-													<td>10 Mar 2021, 5:20 pm</td>
-													<!--end::Created Date-->
-													<!--begin::Action=-->
-													<td class="text-end">
-														<!--begin::Update-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_update_permission">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="black" />
-																	<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Update-->
-														<!--begin::Delete-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px" data-kt-permissions-table-filter="delete_row">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black" />
-																	<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black" />
-																	<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Delete-->
-													</td>
-													<!--end::Action=-->
-												</tr>
-												<tr>
-													<!--begin::Name=-->
-													<td>Repository Management</td>
-													<!--end::Name=-->
-													<!--begin::Assigned to=-->
-													<td>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-primary fs-7 m-1">Administrator</a>
-														<a href="../../demo8/dist/apps/user-management/roles/view.html" class="badge badge-light-danger fs-7 m-1">Developer</a>
-													</td>
-													<!--end::Assigned to=-->
-													<!--begin::Created Date-->
-													<td>25 Jul 2021, 10:10 pm</td>
-													<!--end::Created Date-->
-													<!--begin::Action=-->
-													<td class="text-end">
-														<!--begin::Update-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_update_permission">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="black" />
-																	<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Update-->
-														<!--begin::Delete-->
-														<button class="btn btn-icon btn-active-light-primary w-30px h-30px" data-kt-permissions-table-filter="delete_row">
-															<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-															<span class="svg-icon svg-icon-3">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																	<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black" />
-																	<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black" />
-																	<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-														</button>
-														<!--end::Delete-->
-													</td>
-													<!--end::Action=-->
-												</tr>
-											</tbody>
-											<!--end::Table body-->
-										</table>
-										<!--end::Table-->
+									<div class="card-body p-0">
+										<!--begin::Table wrapper-->
+										<div class="table-responsive">
+											<!--begin::Table-->
+											<table class="table table-flush align-middle table-row-bordered table-row-solid gy-4 gs-9">
+												<!--begin::Thead-->
+												<thead class="border-gray-200 fs-5 fw-bold bg-lighten">
+													<tr>
+														<th class="min-w-250px">Location</th>
+														<th class="min-w-100px">Status</th>
+														<th class="min-w-150px">Device</th>
+														<th class="min-w-150px">IP Address</th>
+														<th class="min-w-150px">Time</th>
+													</tr>
+												</thead>
+												<!--end::Thead-->
+												<!--begin::Tbody-->
+												<tbody class="fw-6 fw-bold text-gray-600">
+													<tr>
+														<td>
+															<a href="#" class="text-hover-primary text-gray-600">USA(5)</a>
+														</td>
+														<td>
+															<span class="badge badge-light-success fs-7 fw-bolder">OK</span>
+														</td>
+														<td>Chrome - Windows</td>
+														<td>236.125.56.78</td>
+														<td>2 mins ago</td>
+													</tr>
+													<tr>
+														<td>
+															<a href="#" class="text-hover-primary text-gray-600">United Kingdom(10)</a>
+														</td>
+														<td>
+															<span class="badge badge-light-success fs-7 fw-bolder">OK</span>
+														</td>
+														<td>Safari - Mac OS</td>
+														<td>236.125.56.78</td>
+														<td>10 mins ago</td>
+													</tr>
+													<tr>
+														<td>
+															<a href="#" class="text-hover-primary text-gray-600">Norway(-)</a>
+														</td>
+														<td>
+															<span class="badge badge-light-danger fs-7 fw-bolder">ERR</span>
+														</td>
+														<td>Firefox - Windows</td>
+														<td>236.125.56.10</td>
+														<td>20 mins ago</td>
+													</tr>
+													<tr>
+														<td>
+															<a href="#" class="text-hover-primary text-gray-600">Japan(112)</a>
+														</td>
+														<td>
+															<span class="badge badge-light-success fs-7 fw-bolder">OK</span>
+														</td>
+														<td>iOS - iPhone Pro</td>
+														<td>236.125.56.54</td>
+														<td>30 mins ago</td>
+													</tr>
+													<tr>
+														<td>
+															<a href="#" class="text-hover-primary text-gray-600">Italy(5)</a>
+														</td>
+														<td>
+															<span class="badge badge-light-warning fs-7 fw-bolder">WRN</span>
+														</td>
+														<td>Samsung Noted 5- Android</td>
+														<td>236.100.56.50</td>
+														<td>40 mins ago</td>
+													</tr>
+												</tbody>
+												<!--end::Tbody-->
+											</table>
+											<!--end::Table-->
+										</div>
+										<!--end::Table wrapper-->
 									</div>
 									<!--end::Card body-->
 								</div>
-								<!--end::Card-->
-								<!--begin::Modals-->
-								<!--begin::Modal - Add permissions-->
-								<div class="modal fade" id="kt_modal_add_permission" tabindex="-1" aria-hidden="true">
-									<!--begin::Modal dialog-->
-									<div class="modal-dialog modal-dialog-centered mw-650px">
-										<!--begin::Modal content-->
-										<div class="modal-content">
-											<!--begin::Modal header-->
-											<div class="modal-header">
-												<!--begin::Modal title-->
-												<h2 class="fw-bolder">Add a Permission</h2>
-												<!--end::Modal title-->
-												<!--begin::Close-->
-												<div class="btn btn-icon btn-sm btn-active-icon-primary" data-kt-permissions-modal-action="close">
-													<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-													<span class="svg-icon svg-icon-1">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-															<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
-															<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
-														</svg>
-													</span>
-													<!--end::Svg Icon-->
-												</div>
-												<!--end::Close-->
-											</div>
-											<!--end::Modal header-->
-											<!--begin::Modal body-->
-											<div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
-												<!--begin::Form-->
-												<form id="kt_modal_add_permission_form" class="form" action="#">
-													<!--begin::Input group-->
-													<div class="fv-row mb-7">
-														<!--begin::Label-->
-														<label class="fs-6 fw-bold form-label mb-2">
-															<span class="required">Permission Name</span>
-															<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Permission names is required to be unique."></i>
-														</label>
-														<!--end::Label-->
-														<!--begin::Input-->
-														<input class="form-control form-control-solid" placeholder="Enter a permission name" name="permission_name" />
-														<!--end::Input-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="fv-row mb-7">
-														<!--begin::Checkbox-->
-														<label class="form-check form-check-custom form-check-solid me-9">
-															<input class="form-check-input" type="checkbox" value="" name="permissions_core" id="kt_permissions_core" />
-															<span class="form-check-label" for="kt_permissions_core">Set as core permission</span>
-														</label>
-														<!--end::Checkbox-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Disclaimer-->
-													<div class="text-gray-600">Permission set as a
-													<strong class="me-1">Core Permission</strong>will be locked and
-													<strong class="me-1">not editable</strong>in future</div>
-													<!--end::Disclaimer-->
-													<!--begin::Actions-->
-													<div class="text-center pt-15">
-														<button type="reset" class="btn btn-light me-3" data-kt-permissions-modal-action="cancel">Discard</button>
-														<button type="submit" class="btn btn-primary" data-kt-permissions-modal-action="submit">
-															<span class="indicator-label">Submit</span>
-															<span class="indicator-progress">Please wait...
-															<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-														</button>
-													</div>
-													<!--end::Actions-->
-												</form>
-												<!--end::Form-->
-											</div>
-											<!--end::Modal body-->
+								<!--end::Login sessions-->
+								<!--begin::License usage-->
+								<div class="card">
+									<!--begin::Card header-->
+									<div class="card-header">
+										<!--begin::Heading-->
+										<div class="card-title">
+											<h3>License Usage</h3>
 										</div>
-										<!--end::Modal content-->
-									</div>
-									<!--end::Modal dialog-->
-								</div>
-								<!--end::Modal - Add permissions-->
-								<!--begin::Modal - Update permissions-->
-								<div class="modal fade" id="kt_modal_update_permission" tabindex="-1" aria-hidden="true">
-									<!--begin::Modal dialog-->
-									<div class="modal-dialog modal-dialog-centered mw-650px">
-										<!--begin::Modal content-->
-										<div class="modal-content">
-											<!--begin::Modal header-->
-											<div class="modal-header">
-												<!--begin::Modal title-->
-												<h2 class="fw-bolder">Update Permission</h2>
-												<!--end::Modal title-->
-												<!--begin::Close-->
-												<div class="btn btn-icon btn-sm btn-active-icon-primary" data-kt-permissions-modal-action="close">
-													<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-													<span class="svg-icon svg-icon-1">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-															<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
-															<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
-														</svg>
-													</span>
-													<!--end::Svg Icon-->
-												</div>
-												<!--end::Close-->
+										<!--end::Heading-->
+										<!--begin::Toolbar-->
+										<div class="card-toolbar">
+											<div class="my-1 me-4">
+												<!--begin::Select-->
+												<select class="form-select form-select-sm form-select-solid w-125px" data-control="select2" data-placeholder="Select Hours" data-hide-search="true">
+													<option value="1">1 Hours</option>
+													<option value="2">6 Hours</option>
+													<option value="3" selected="selected">12 Hours</option>
+													<option value="4">24 Hours</option>
+												</select>
+												<!--end::Select-->
 											</div>
-											<!--end::Modal header-->
-											<!--begin::Modal body-->
-											<div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
-												<!--begin::Notice-->
-												<!--begin::Notice-->
-												<div class="notice d-flex bg-light-warning rounded border-warning border border-dashed mb-9 p-6">
-													<!--begin::Icon-->
-													<!--begin::Svg Icon | path: icons/duotune/general/gen044.svg-->
-													<span class="svg-icon svg-icon-2tx svg-icon-warning me-4">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-															<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
-															<rect x="11" y="14" width="7" height="2" rx="1" transform="rotate(-90 11 14)" fill="black" />
-															<rect x="11" y="17" width="2" height="2" rx="1" transform="rotate(-90 11 17)" fill="black" />
-														</svg>
-													</span>
-													<!--end::Svg Icon-->
-													<!--end::Icon-->
-													<!--begin::Wrapper-->
-													<div class="d-flex flex-stack flex-grow-1">
-														<!--begin::Content-->
-														<div class="fw-bold">
-															<div class="fs-6 text-gray-700">
-															<strong class="me-1">Warning!</strong>By editing the permission name, you might break the system permissions functionality. Please ensure you're absolutely certain before proceeding.</div>
-														</div>
-														<!--end::Content-->
-													</div>
-													<!--end::Wrapper-->
-												</div>
-												<!--end::Notice-->
-												<!--end::Notice-->
-												<!--begin::Form-->
-												<form id="kt_modal_update_permission_form" class="form" action="#">
-													<!--begin::Input group-->
-													<div class="fv-row mb-7">
-														<!--begin::Label-->
-														<label class="fs-6 fw-bold form-label mb-2">
-															<span class="required">Permission Name</span>
-															<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Permission names is required to be unique."></i>
-														</label>
-														<!--end::Label-->
-														<!--begin::Input-->
-														<input class="form-control form-control-solid" placeholder="Enter a permission name" name="permission_name" />
-														<!--end::Input-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Actions-->
-													<div class="text-center pt-15">
-														<button type="reset" class="btn btn-light me-3" data-kt-permissions-modal-action="cancel">Discard</button>
-														<button type="submit" class="btn btn-primary" data-kt-permissions-modal-action="submit">
-															<span class="indicator-label">Submit</span>
-															<span class="indicator-progress">Please wait...
-															<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-														</button>
-													</div>
-													<!--end::Actions-->
-												</form>
-												<!--end::Form-->
-											</div>
-											<!--end::Modal body-->
+											<a href="#" class="btn btn-sm btn-primary my-1">Download Report</a>
 										</div>
-										<!--end::Modal content-->
+										<!--end::Toolbar-->
 									</div>
-									<!--end::Modal dialog-->
+									<!--end::Card header-->
+									<!--begin::Card body-->
+									<div class="card-body p-0">
+										<!--begin::Table wrapper-->
+										<div class="table-responsive">
+											<!--begin::Table-->
+											<table class="table table-flush align-middle table-row-bordered table-row-solid gy-4" id="kt_security_license_usage_table">
+												<!--begin::Thead-->
+												<thead class="border-gray-200 fs-5 fw-bold bg-lighten">
+													<tr>
+														<th class="w-150px ps-9">Status</th>
+														<th class="px-0 min-w-250px">Operator</th>
+														<th class="min-w-150px">IP Address</th>
+														<th class="min-w-150px">Created</th>
+														<th class="pe-0 min-w-150px">API Keys</th>
+														<th class="min-w-50px"></th>
+													</tr>
+												</thead>
+												<!--end::Thead-->
+												<!--begin::Tbody-->
+												<tbody class="fw-6 fw-bold text-gray-600">
+													<tr>
+														<td class="ps-9">
+															<span class="badge badge-light-success fs-7 fw-bolder">License</span>
+														</td>
+														<td class="ps-0">
+															<a href="" class="text-hover-primary text-gray-600">DSI: Workstation 2</a>
+														</td>
+														<td>236.125.56.78</td>
+														<td>2 mins ago</td>
+														<td data-bs-target="license">fftt456765gjkkjhi8306767</td>
+														<td class="ps-5">
+															<button type="button" data-action="copy" class="btn btn-active-color-primary btn-icon btn-sm btn-outline-light d-">
+																<!--begin::Svg Icon | path: icons/duotune/general/gen054.svg-->
+																<span class="svg-icon svg-icon-2">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																		<path opacity="0.5" d="M18 2H9C7.34315 2 6 3.34315 6 5H8C8 4.44772 8.44772 4 9 4H18C18.5523 4 19 4.44772 19 5V16C19 16.5523 18.5523 17 18 17V19C19.6569 19 21 17.6569 21 16V5C21 3.34315 19.6569 2 18 2Z" fill="black" />
+																		<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7857 7.125H6.21429C5.62255 7.125 5.14286 7.6007 5.14286 8.1875V18.8125C5.14286 19.3993 5.62255 19.875 6.21429 19.875H14.7857C15.3774 19.875 15.8571 19.3993 15.8571 18.8125V8.1875C15.8571 7.6007 15.3774 7.125 14.7857 7.125ZM6.21429 5C4.43908 5 3 6.42709 3 8.1875V18.8125C3 20.5729 4.43909 22 6.21429 22H14.7857C16.5609 22 18 20.5729 18 18.8125V8.1875C18 6.42709 16.5609 5 14.7857 5H6.21429Z" fill="black" />
+																	</svg>
+																</span>
+																<!--end::Svg Icon-->
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td class="ps-9">
+															<span class="badge badge-light-danger fs-7 fw-bolder">Unknown</span>
+														</td>
+														<td class="ps-0">
+															<a href="" class="text-hover-primary text-gray-600">ReXe: Workstation 29</a>
+														</td>
+														<td>236.125.56.78</td>
+														<td>3 mins ago</td>
+														<td data-bs-target="license">none</td>
+														<td class="ps-5"></td>
+													</tr>
+													<tr>
+														<td class="ps-9">
+															<span class="badge badge-light-success fs-7 fw-bolder">License</span>
+														</td>
+														<td class="ps-0">
+															<a href="" class="text-hover-primary text-gray-600">RamenLC: Workstation 2</a>
+														</td>
+														<td>654.125.56.34</td>
+														<td>5 mins ago</td>
+														<td data-bs-target="license">ertt456765gjkkjhi83034344</td>
+														<td class="ps-5">
+															<button type="button" data-action="copy" class="btn btn-active-color-primary btn-icon btn-sm btn-outline-light d-">
+																<!--begin::Svg Icon | path: icons/duotune/general/gen054.svg-->
+																<span class="svg-icon svg-icon-2">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																		<path opacity="0.5" d="M18 2H9C7.34315 2 6 3.34315 6 5H8C8 4.44772 8.44772 4 9 4H18C18.5523 4 19 4.44772 19 5V16C19 16.5523 18.5523 17 18 17V19C19.6569 19 21 17.6569 21 16V5C21 3.34315 19.6569 2 18 2Z" fill="black" />
+																		<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7857 7.125H6.21429C5.62255 7.125 5.14286 7.6007 5.14286 8.1875V18.8125C5.14286 19.3993 5.62255 19.875 6.21429 19.875H14.7857C15.3774 19.875 15.8571 19.3993 15.8571 18.8125V8.1875C15.8571 7.6007 15.3774 7.125 14.7857 7.125ZM6.21429 5C4.43908 5 3 6.42709 3 8.1875V18.8125C3 20.5729 4.43909 22 6.21429 22H14.7857C16.5609 22 18 20.5729 18 18.8125V8.1875C18 6.42709 16.5609 5 14.7857 5H6.21429Z" fill="black" />
+																	</svg>
+																</span>
+																<!--end::Svg Icon-->
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td class="ps-9">
+															<span class="badge badge-light-success fs-7 fw-bolder">License</span>
+														</td>
+														<td class="ps-0">
+															<a href="" class="text-hover-primary text-gray-600">Nest Five: Workstation 86</a>
+														</td>
+														<td>423.125.56.54</td>
+														<td>1 mins ago</td>
+														<td data-bs-target="license">dctt456765gjkkjhi83093985</td>
+														<td class="ps-5">
+															<button type="button" data-action="copy" class="btn btn-active-color-primary btn-icon btn-sm btn-outline-light d-">
+																<!--begin::Svg Icon | path: icons/duotune/general/gen054.svg-->
+																<span class="svg-icon svg-icon-2">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																		<path opacity="0.5" d="M18 2H9C7.34315 2 6 3.34315 6 5H8C8 4.44772 8.44772 4 9 4H18C18.5523 4 19 4.44772 19 5V16C19 16.5523 18.5523 17 18 17V19C19.6569 19 21 17.6569 21 16V5C21 3.34315 19.6569 2 18 2Z" fill="black" />
+																		<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7857 7.125H6.21429C5.62255 7.125 5.14286 7.6007 5.14286 8.1875V18.8125C5.14286 19.3993 5.62255 19.875 6.21429 19.875H14.7857C15.3774 19.875 15.8571 19.3993 15.8571 18.8125V8.1875C15.8571 7.6007 15.3774 7.125 14.7857 7.125ZM6.21429 5C4.43908 5 3 6.42709 3 8.1875V18.8125C3 20.5729 4.43909 22 6.21429 22H14.7857C16.5609 22 18 20.5729 18 18.8125V8.1875C18 6.42709 16.5609 5 14.7857 5H6.21429Z" fill="black" />
+																	</svg>
+																</span>
+																<!--end::Svg Icon-->
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td class="ps-9">
+															<span class="badge badge-light-danger fs-7 fw-bolder">Unknown</span>
+														</td>
+														<td class="ps-0">
+															<a href="" class="text-hover-primary text-gray-600">DSI: Workstation 2</a>
+														</td>
+														<td>236.125.56.78</td>
+														<td>7 mins ago</td>
+														<td data-bs-target="license">none</td>
+														<td class="ps-5"></td>
+													</tr>
+													<tr>
+														<td class="ps-9">
+															<span class="badge badge-light-success fs-7 fw-bolder">License</span>
+														</td>
+														<td class="ps-0">
+															<a href="" class="text-hover-primary text-gray-600">ReXe: Workstation 7</a>
+														</td>
+														<td>745.234.56.21</td>
+														<td>3 mins ago</td>
+														<td data-bs-target="license">uytt456765gjkkjhi4312673</td>
+														<td class="ps-5">
+															<button type="button" data-action="copy" class="btn btn-active-color-primary btn-icon btn-sm btn-outline-light d-">
+																<!--begin::Svg Icon | path: icons/duotune/general/gen054.svg-->
+																<span class="svg-icon svg-icon-2">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																		<path opacity="0.5" d="M18 2H9C7.34315 2 6 3.34315 6 5H8C8 4.44772 8.44772 4 9 4H18C18.5523 4 19 4.44772 19 5V16C19 16.5523 18.5523 17 18 17V19C19.6569 19 21 17.6569 21 16V5C21 3.34315 19.6569 2 18 2Z" fill="black" />
+																		<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7857 7.125H6.21429C5.62255 7.125 5.14286 7.6007 5.14286 8.1875V18.8125C5.14286 19.3993 5.62255 19.875 6.21429 19.875H14.7857C15.3774 19.875 15.8571 19.3993 15.8571 18.8125V8.1875C15.8571 7.6007 15.3774 7.125 14.7857 7.125ZM6.21429 5C4.43908 5 3 6.42709 3 8.1875V18.8125C3 20.5729 4.43909 22 6.21429 22H14.7857C16.5609 22 18 20.5729 18 18.8125V8.1875C18 6.42709 16.5609 5 14.7857 5H6.21429Z" fill="black" />
+																	</svg>
+																</span>
+																<!--end::Svg Icon-->
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td class="ps-9">
+															<span class="badge badge-light-warning fs-7 fw-bolder">To be Paid</span>
+														</td>
+														<td class="ps-0">
+															<a href="" class="text-hover-primary text-gray-600">Swedline: Workstation 54</a>
+														</td>
+														<td>441.967.56.54</td>
+														<td>8 mins ago</td>
+														<td data-bs-target="license">ygd456765gjkkjhi83095427</td>
+														<td class="ps-5">
+															<button type="button" data-action="copy" class="btn btn-active-color-primary btn-icon btn-sm btn-outline-light d-">
+																<!--begin::Svg Icon | path: icons/duotune/general/gen054.svg-->
+																<span class="svg-icon svg-icon-2">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																		<path opacity="0.5" d="M18 2H9C7.34315 2 6 3.34315 6 5H8C8 4.44772 8.44772 4 9 4H18C18.5523 4 19 4.44772 19 5V16C19 16.5523 18.5523 17 18 17V19C19.6569 19 21 17.6569 21 16V5C21 3.34315 19.6569 2 18 2Z" fill="black" />
+																		<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7857 7.125H6.21429C5.62255 7.125 5.14286 7.6007 5.14286 8.1875V18.8125C5.14286 19.3993 5.62255 19.875 6.21429 19.875H14.7857C15.3774 19.875 15.8571 19.3993 15.8571 18.8125V8.1875C15.8571 7.6007 15.3774 7.125 14.7857 7.125ZM6.21429 5C4.43908 5 3 6.42709 3 8.1875V18.8125C3 20.5729 4.43909 22 6.21429 22H14.7857C16.5609 22 18 20.5729 18 18.8125V8.1875C18 6.42709 16.5609 5 14.7857 5H6.21429Z" fill="black" />
+																	</svg>
+																</span>
+																<!--end::Svg Icon-->
+															</button>
+														</td>
+													</tr>
+												</tbody>
+												<!--end::Tbody-->
+											</table>
+											<!--end::Table-->
+										</div>
+										<!--end::Table wrapper-->
+									</div>
+									<!--end::Card body-->
 								</div>
-								<!--end::Modal - Update permissions-->
-								<!--end::Modals-->
+								<!--end::License usage-->
 							</div>
 							<!--end::Container-->
 						</div>
@@ -5829,13 +5725,13 @@ License: For each use you must have a valid license purchased only from above li
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/media/avatars/150-26.jpg" />
+											<span class="symbol-label bg-light-danger text-danger fw-bold">E</span>
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
 										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary mb-2">Max Smith</a>
-											<div class="fw-bold text-muted">max@kt.com</div>
+											<a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary mb-2">Emma Bold</a>
+											<div class="fw-bold text-muted">emma@intenso.com</div>
 										</div>
 										<!--end::Details-->
 									</div>
@@ -7106,13 +7002,9 @@ License: For each use you must have a valid license purchased only from above li
 		<script src="assets/plugins/global/plugins.bundle.js"></script>
 		<script src="assets/js/scripts.bundle.js"></script>
 		<!--end::Global Javascript Bundle-->
-		<!--begin::Page Vendors Javascript(used by this page)-->
-		<script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
-		<!--end::Page Vendors Javascript-->
 		<!--begin::Page Custom Javascript(used by this page)-->
-		<script src="assets/js/custom/apps/user-management/permissions/list.js"></script>
-		<script src="assets/js/custom/apps/user-management/permissions/add-permission.js"></script>
-		<script src="assets/js/custom/apps/user-management/permissions/update-permission.js"></script>
+		<script src="assets/js/custom/account/security/security-summary.js"></script>
+		<script src="assets/js/custom/account/security/license-usage.js"></script>
 		<script src="assets/js/custom/widgets.js"></script>
 		<script src="assets/js/custom/apps/chat/chat.js"></script>
 		<script src="assets/js/custom/modals/create-app.js"></script>
